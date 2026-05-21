@@ -1,0 +1,15 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "extends":"@workspace/typescript-config/base.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@workspace/db/*": ["../../packages/db/src/*"]
+    },
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "typeRoots" : ["./src/types", "./node_modules/@types"]
+  }
+}
